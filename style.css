@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: lightgray;
+  padding: 10px;
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.header {
+  width: 100%;
+  min-height: 20px;
+  width: 500px;
+  background-color: lightseagreen;
+  border-radius: 10px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 5px;
+}
+
+.header h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.box {
+  width: 50vh;
+  height: 6vh;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: lightgray;
+  padding-left: 10px;
+}
+
+.btn {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  width: 6vh;
+  height: 6vh;
+  margin-left: 10px;
+  background-color: lightcoral;
+  cursor: pointer;
+}
+
+.btn img {
+  margin-top: 0.3vh;
+  height: 30px;
+}
+
+.TaskList {
+  list-style-type: none;
+  position: relative;
+  padding: 40px;
+  line-height: 6vh;
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.519);
+  font-weight: 700;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.TaskList li::before {
+  position: absolute;
+  content: " ";
+  border: 1px solid rgba(0, 0, 0, 0.519);
+  border-radius: 50%;
+  margin-top: 8px;
+  left: 8px;
+  height: 3vh;
+  width: 1.5vw;
+}
+
+.TaskList li.Task {
+  text-decoration: line-through;
+}
+
+.TaskList li.Task::before {
+  position: absolute;
+  content: " ";
+  border: 1px solid rgba(0, 0, 0, 0.519);
+  background: green;
+  border-radius: 50%;
+  margin-top: 8px;
+  left: 8px;
+  height: 3vh;
+  width: 1.5vw;
+}
+
+.TaskList span {
+  position: absolute;
+  color: rgb(137, 17, 17);
+  right: 0;
+  cursor: pointer;
+}
